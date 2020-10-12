@@ -1,0 +1,1 @@
+docker run -it --rm --name ilp-cli ilp-cli ./ilp-cli "$@"
