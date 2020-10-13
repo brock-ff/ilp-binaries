@@ -7,6 +7,10 @@ Builds ILP binaries from source and creates a container for each binary (`ilp-cl
 ### 1. Build
 
 ```shell
+# to build locally, pass the -b argument
+./build.sh -b
+
+# if you plan to build with docker-compose later, and only download the source code
 ./build.sh
 ```
 

@@ -17,9 +17,11 @@ git clone https://github.com/interledger-rs/settlement-engines
 cd $ROOT
 
 # build images
+if [ "$1" == "-b" ]; then
 docker build -t ilp-build -f ./ilp-build.Dockerfile .
 docker build -t ilp-node -f ./ilp-node.Dockerfile .
 docker build -t ilp-cli -f ./ilp-cli.Dockerfile .
 docker build -t settlement-engine-eth -f ./settlement-engine-eth.Dockerfile .
+fi
 
 echo "Done."
